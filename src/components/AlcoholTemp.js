@@ -1,10 +1,17 @@
-const AlcoholTemp = () => {
-    return (  
+import { Link } from "react-router-dom"
+import React from 'react';
+
+
+const AlcoholTemp = (props) => {
+    return (
         <article id="mainAlcoholKind">
-            <h2>Alkohol</h2>
-            <p>Alkohol Beschreibung</p>
-        </article>
+            <Link to={props.link}>
+                <h2>{props.name}</h2>
+                <p>{props.tagline}</p>
+            </Link>
+        </article >
+
     );
 }
- 
+
 export default AlcoholTemp;
