@@ -2,27 +2,27 @@ let alc = [
     {
         name: "Gin",
         tagline: "It's Gin o'clock",
-        link: "/gin-cocktails"
+        link: "/gin_cocktails"
     },
     {
         name: "Vodka",
         tagline: "Vodka is great",
-        link: "/vodka-cocktails"
+        link: "/vodka_cocktails"
     },
     {
         name: "Rum",
         tagline: "Rum is for sailors",
-        link: "/rum-cocktails"
+        link: "/rum_cocktails"
     },
     {
         name: "Scotch",
         tagline: "Scotch is for hard men/women",
-        link: "/scotch-cocktails"
+        link: "/scotch_cocktails"
     },
     {
         name: "Alcohol free",
         tagline: "It's sissy time",
-        link: "/nonalcholic-cocktails"
+        link: "/nonalcholic_cocktails"
     },
     {
         name: "Random",

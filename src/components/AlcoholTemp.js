@@ -15,3 +15,4 @@ const AlcoholTemp = (props) => {
 }
 
 export default AlcoholTemp;
+
