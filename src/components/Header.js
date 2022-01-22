@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const Header = () => {
     return (
         <header>
             <nav>
                 <p>DRINKS & CHILL</p>
-                <Link to='/'>HOME </Link>
-            </nav>
+                <Link to="/">HOME</Link>
+            </nav >
             <h1>Cocktails & Getränke</h1>
             <p>HERZLICH WILLKOMMEN IN DER WELT DER COCKTAILS UND GETRÄNKE</p>
             <form action="">
@@ -14,7 +14,7 @@ const Header = () => {
                 <input type="submit" value="suchen" />
             </form>
 
-        </header>
+        </header >
     );
 }
 

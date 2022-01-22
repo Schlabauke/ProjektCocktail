@@ -1,20 +1,19 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import AlcoholItem from '../components/AlcoholItem'
+import React from 'react';
+import Header from '../components/Header.js';
+import AlcoholItem from '../components/AlcoholItem.js';
+import Footer from '../components/Footer.js';
 
-import React, { Component } from 'react';
 
-
-class Main extends React.Component {
+class main extends React.Component {
     render() {
-        return <section>
-            <Header />
-            <AlcoholItem />
-            <Footer />
-        </section>;
+        return (
+            <section>
+                <Header />
+                <AlcoholItem />
+                <Footer />
+            </section>
+        );
     }
 }
 
-export default Main;
-
-
+export default main;

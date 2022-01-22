@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-class CocktailDetailItem extends React.Component {
-    render() {
-        return (<article>
-            <Link to='/cocktails'>Back</Link>
-            <h2>Cocktailname</h2>
-            <p>Bild</p>
-            <p>Zutaten & Zubereitung</p>
-        </article>);
-    }
+import React from 'react';
+import { Link } from "react-router-dom"
+
+
+//SFC mit props
+
+const CoktailDetailItem = (props) => {
+    return (<article>
+        <h2>Cocktail Name</h2>
+        <img src="" alt="cocktailbild" />
+        <p>Zutaten</p>
+        <p>Rezept</p>
+        <Link to="/">back</Link>
+    </article>);
 }
 
+export default CoktailDetailItem;
 
-export default CocktailDetailItem;
+

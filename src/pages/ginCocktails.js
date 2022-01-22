@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import CocktailTemp from './CocktailTemp';
+import React from 'react';
+import Header from '../components/Header.js';
+import Footer from '../components/Footer.js';
+import CocktailTemp from '../components/CocktailTemp.js';
 import { v4 as uuidv4 } from 'uuid';
 
 
-class CocktailItems extends Component {
+class cocktails extends React.Component {
     state = {
         drinkByIngredient: []
     }
@@ -14,6 +16,7 @@ class CocktailItems extends Component {
     }
     render() {
         return (<section>
+            <Header />
             {this.state.drinkByIngredient.map((elt) => <CocktailTemp
                 key={uuidv4()}
                 cocktailId={elt.idDrink}
@@ -21,11 +24,10 @@ class CocktailItems extends Component {
                 cocktailImage={elt.strDrinkThumb}
             />
             )}
+            <Footer />
         </section>
         )
     }
-
 }
 
-export default CocktailItems;
-
+export default cocktails;
