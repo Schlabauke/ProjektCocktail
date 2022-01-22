@@ -10,13 +10,12 @@ class cocktailDetails extends React.Component {
     }
 
     componentDidMount = () => {
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${this.state.props.cocktailId}`)
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${this.props.cocktailId}`)
             .then(response => response.json())
-            .then(json => this.setState({ recipe: json.drinks }))      
+            .then(json => this.setState({ recipe: json.drinks[0] }))      
     }
 
     render() {
-        console.log(this.state.props.cocktailId)
         return (
             <section>
                 <Header />
