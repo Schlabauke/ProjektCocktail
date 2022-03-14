@@ -1,8 +1,6 @@
 import React from 'react';
-import Header from '../components/Header.js';
 import CocktailDetailItem from '../components/CocktailDetailItem.js';
 // import CocktailItems from '../components/CocktailItems.js';
-import Footer from '../components/Footer.js';
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -20,8 +18,6 @@ class cocktails extends React.Component {
     render() {
         return (
             <section>
-                <Header />
-
                 <CocktailDetailItem/>
                 {/* <section>
                     {this.state.cocktailRecipe.map(elt => <CocktailDetailItem
@@ -32,8 +28,6 @@ class cocktails extends React.Component {
                     />)
                     }
                 </section> */}
-
-                <Footer />
             </section>
         );
     }

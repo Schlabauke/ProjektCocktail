@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from '../components/Header.js';
 import CocktailDetailItem from '../components/CocktailDetailItem.js';
-import Footer from '../components/Footer.js';
 
 
 class cocktailDetails extends React.Component {
@@ -18,10 +16,8 @@ class cocktailDetails extends React.Component {
     render() {
         return (
             <section>
-                <Header />
                 <h1>hallo</h1>
                 <h1>{this.state.recipe.strDrink}</h1>
-                <Footer />
             </section>
         );
     }
