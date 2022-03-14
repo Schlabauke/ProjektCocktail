@@ -23,30 +23,55 @@ ul {
   list-style: none;
 }
 
-
-// ***** Header Styles *****
-header {
-  padding: 3vh 5vw; 
-  nav {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10vh;
+.button {
+  background-color: #986D8E; 
+  color: #E7EAB5; 
+  width: 100px; 
+  border-radius: 5px; 
+  height: 25px; 
+  border: 1px solid #986D8E; 
+  &:hover {
+    background-color: #E7EAB5; 
+    color: #986D8E; 
+    border: 1px solid #E7EAB5;
   }
+}
+
+// ***** Header & Footer Styles *****
+header, footer {
+  padding: 3vh 5vw; 
   p {
     margin: 3vh 0 5vh 0; 
+    line-height: 25px;
+  }
+}
+
+// Navigation
+nav {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10vh;
+  a {
+    &:hover {
+      color: #986D8E; 
+    }
   }
 }
 
 // Search
 input {
   height: 25px; 
+  border: 1px solid #986D8E; 
+  margin-right: 10px; 
+  border-radius: 5px; 
+  padding-left: 5px; 
 }
 
+// ***** Main & IngredientPage Styles *****
 .mainPageAlcohol, .ingredientPages {
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px; 
 }
 
 .style1 {
@@ -68,4 +93,29 @@ input {
 .style6 {
   background-color: #F1F7E7;
 }
+
+// ***** Recipe page Styles *****
+.recipe {
+  padding: 3vh 5vw; 
+  .recipeHeadline {
+    display: flex; 
+    h2 {
+      margin-right: 5vw; 
+    }
+    img {
+      width: 40%; 
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    h3, h4 {
+      margin: 1vh 0; 
+    }
+    p {
+      margin: 1vh 0; 
+    }
+  }
+}
+
+
+
 
