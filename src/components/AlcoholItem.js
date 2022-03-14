@@ -1,11 +1,9 @@
 import AlcoholTemp from './AlcoholTemp.js';
-import React, { Component } from 'react';
 import Alc from './alc.js';
 import { v4 as uuidv4 } from 'uuid';
 
-
-class AlcoholItem extends React.Component {
-    render() {
+const AlcoholItem = () => {
+    
         return (
             <section id="mainAlcoholKind">
                 {Alc.map(elt => 
@@ -19,6 +17,6 @@ class AlcoholItem extends React.Component {
             </section>
         );
     }
-}
+
 
 export default AlcoholItem;

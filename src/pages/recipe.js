@@ -1,7 +1,5 @@
 import React from 'react';
-import CocktailDetailItem from '../components/CocktailDetailItem.js';
-
-
+import BackButton from '../components/BackButton';
 class cocktailDetails extends React.Component {
     state = {
         recipe: []
@@ -16,8 +14,17 @@ class cocktailDetails extends React.Component {
     render() {
         return (
             <section>
-                <h1>hallo</h1>
                 <h1>{this.state.recipe.strDrink}</h1>
+                <h2>Cocktail Rezept</h2>
+            <img src={this.state.recipe.strDrinkThumb} alt={this.state.recipe.strDrink} />
+            <ul>
+                <li>{this.state.recipe.strMeasure1} {this.state.recipe.strIngredient1}</li>
+                <li>{this.state.recipe.strMeasure2} {this.state.recipe.strIngredient2}</li>
+                <li>{this.state.recipe.strMeasure3} {this.state.recipe.strIngredient3}</li>
+                <li>{this.state.recipe.strMeasure4} {this.state.recipe.strIngredient4}</li>
+            </ul>
+            <p>{this.state.recipe.strInstructionsDE}</p>
+            <BackButton/>
             </section>
         );
     }

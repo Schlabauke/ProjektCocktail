@@ -9,6 +9,7 @@ class cocktails extends React.Component {
         drinkByIngredient: [],
     }
 
+
     componentDidMount = () => {
         fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin')
             .then(response => response.json())
