@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
+// Colors 
+// #986D8E,#E2C2B9,#87A8A4,#BFD8B8,#E7EAB5,#F1F7E7
+
  // fonts
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h1, h2, h3, h4, .button {
+h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -18,5 +21,51 @@ a {
 
 ul {
   list-style: none;
+}
+
+
+// ***** Header Styles *****
+header {
+  padding: 3vh 5vw; 
+  nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+  p {
+    margin: 3vh 0 5vh 0; 
+  }
+}
+
+// Search
+input {
+  height: 25px; 
+}
+
+.mainPageAlcohol, .ingredientPages {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px; 
+}
+
+.style1 {
+  background-color: #986D8E;
+}
+.style2 {
+  background-color: #E2C2B9;
+  grid-row: 0/1;
+}
+.style3 {
+  background-color: #87A8A4;
+}
+.style4 {
+  background-color: #BFD8B8;
+}
+.style5 {
+  background-color: #E7EAB5;
+}
+.style6 {
+  background-color: #F1F7E7;
 }
 

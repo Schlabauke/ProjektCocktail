@@ -17,12 +17,19 @@ class cocktails extends React.Component {
     render() {
         return (
             <section className="ingredientPages">
-                {this.state.drinkByIngredient.map(elt => <CocktailTemp
-                    key={uuidv4()}
-                    cocktailName={elt.strDrink}
-                    cocktailImage={elt.strDrinkThumb}
-                    cocktailId={elt.idDrink}
-                />)
+                {this.state.drinkByIngredient.map((elt, i) => <div
+                    className={`style${Math.floor((i % 6) + 1)} 
+			${i % 2 == 0 ? 'left' : 'right'}
+			`}
+                    key={elt.id}
+                >
+                    <CocktailTemp
+                        key={uuidv4()}
+                        cocktailName={elt.strDrink}
+                        cocktailImage={elt.strDrinkThumb}
+                        cocktailId={elt.idDrink}
+                    />
+                </div>)
                 }
             </section>
         );

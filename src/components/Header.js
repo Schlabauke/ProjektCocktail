@@ -11,7 +11,7 @@ const Header = () => {
             <h1>Cocktails & Getränke</h1>
             <p>Herzlich willkommen in der Welt der Cocktails und Getränke.</p>
             <form action="">
-                <input type="text" name="search" id="search" placeholder="tippe etwas"/>
+                <input className="searchField" type="text" name="search" id="search" placeholder="tippe etwas"/>
                 <input className="button" type="submit" value="suchen"/>
             </form>
         </header>
