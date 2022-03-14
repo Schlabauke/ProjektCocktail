@@ -1,3 +1,4 @@
+// Data for main page
 let alc = [
     {
         name: "Gin",

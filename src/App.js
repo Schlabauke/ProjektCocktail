@@ -1,17 +1,20 @@
-import './App.css';
+// General Imports
+import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Main from './pages/main.js';
-import GinCocktails from './pages/ginCocktails.js';
-import VodkaCocktails from './pages/vodkaCocktails.js';
-import RumCocktails from './pages/rumCocktails.js';
-import ScotchCocktails from './pages/scotchCocktails.js';
-import NonalcoholicCocktails from './pages/nonalcoholicCocktails.js';
-import Random from './pages/random.js';
-//import CocktailDetails from './pages/cocktailDetails.js';
+
+// Import Components 
 import GetId from './components/GetId.js';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
+// Import Pages
+import Main from './pages/main.js';
+import Random from './pages/recipePages/random.js';
+import GinCocktails from './pages/incredientPages/ginCocktails.js';
+import RumCocktails from './pages/incredientPages/rumCocktails.js';
+import VodkaCocktails from './pages/incredientPages/vodkaCocktails.js';
+import ScotchCocktails from './pages/incredientPages/scotchCocktails.js';
+import NonalcoholicCocktails from './pages/incredientPages/nonalcoholicCocktails.js';
 
 
 function App() {
@@ -42,4 +45,3 @@ function App() {
 
 export default App;
 
-//<Route path="/cocktail_details" element={<CocktailDetails/>}/> 

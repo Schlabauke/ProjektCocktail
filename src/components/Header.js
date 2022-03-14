@@ -1,3 +1,4 @@
+// Header
 import { Link } from "react-router-dom"
 
 const Header = () => {
@@ -13,7 +14,6 @@ const Header = () => {
                 <input type="text" name="search" id="search" placeholder="tippe etwas"/>
                 <input type="submit" value="suchen"/>
             </form>
-
         </header>
     );
 }

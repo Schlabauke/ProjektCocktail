@@ -1,11 +1,11 @@
+// Main page
 import React from 'react';
-import AlcoholItem from '../components/AlcoholItem.js';
-
+import AlcoholItem from '../components/mainPageComps/AlcoholItem.js';
 
 class main extends React.Component {
     render() {
         return (
-            <section>
+            <section className="mainPage">
                 <AlcoholItem />
             </section>
         );

@@ -1,4 +1,4 @@
-import React from 'react';
+// Incredient page content
 import { Link } from "react-router-dom"
 
 const CocktailTemp = (props) => {

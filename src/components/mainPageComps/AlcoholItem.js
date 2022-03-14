@@ -1,11 +1,11 @@
-import AlcoholTemp from './AlcoholTemp.js';
-import Alc from './alc.js';
+// Main page content
+import Alc from '../../data/alc.js';
 import { v4 as uuidv4 } from 'uuid';
+import AlcoholTemp from './AlcoholTemp.js';
 
 const AlcoholItem = () => {
-    
         return (
-            <section id="mainAlcoholKind">
+            <article className="mainPageAlcohol">
                 {Alc.map(elt => 
                     <AlcoholTemp
                         key={uuidv4()}
@@ -14,9 +14,8 @@ const AlcoholItem = () => {
                         link={elt.link}
                     />
                 )}
-            </section>
+            </article>
         );
     }
-
 
 export default AlcoholItem;
