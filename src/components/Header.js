@@ -7,6 +7,7 @@ const Header = () => {
             <nav>
                 <p>DRINKS & CHILL</p>
                 <Link to="/">HOME</Link>
+                <div className="gradientBox"></div>
             </nav>
             <h1>Cocktails & Getränke</h1>
             <p>Herzlich willkommen in der Welt der Cocktails und Getränke.</p>

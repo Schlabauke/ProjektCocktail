@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.App{
+  background-color: #F1F7E7;
+  color:#514f5c;
+}
 
 // Colors 
 // #986D8E,#E2C2B9,#87A8A4,#BFD8B8,#E7EAB5,#F1F7E7
@@ -32,7 +36,17 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10vh;
-  }
+    .gradientBox{
+     position:absolute;
+     top:11vh;
+     height: 1.7px;
+     width:100%;
+     left:0;
+     right:0;
+     background: linear-gradient(to right, #986d8e , #8a7ba1 , #7b89ab , #7294ad , #759eaa , #81a9ac , #8fb3af, #a0bcb2 , #b4cbbe , #c8d9ca, #dde8d8 , #f1f7e7); 
+           }
+    }
+   
   p {
     margin: 3vh 0 5vh 0; 
   }
@@ -44,13 +58,19 @@ input {
 }
 
 .mainPageAlcohol, .ingredientPages {
+  margin: 5vh 0;
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px; 
+  text-align: center;
+  align-items: center;
+  
 }
-
+.alcTemp{
+  padding: 15%;
+}
 .style1 {
   background-color: #986D8E;
+    
 }
 .style2 {
   background-color: #E2C2B9;
@@ -66,6 +86,6 @@ input {
   background-color: #E7EAB5;
 }
 .style6 {
-  background-color: #F1F7E7;
+  background-color: #edf0c3;
 }
 
