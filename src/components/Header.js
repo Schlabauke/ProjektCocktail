@@ -9,10 +9,10 @@ const Header = () => {
                 <Link to="/">HOME</Link>
             </nav>
             <h1>Cocktails & Getränke</h1>
-            <p>HERZLICH WILLKOMMEN IN DER WELT DER COCKTAILS UND GETRÄNKE</p>
+            <p>Herzlich willkommen in der Welt der Cocktails und Getränke.</p>
             <form action="">
                 <input type="text" name="search" id="search" placeholder="tippe etwas"/>
-                <input type="submit" value="suchen"/>
+                <input className="button" type="submit" value="suchen"/>
             </form>
         </header>
     );

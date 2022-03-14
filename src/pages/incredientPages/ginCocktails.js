@@ -16,7 +16,7 @@ class cocktails extends React.Component {
 
     render() {
         return (
-            <section className="alcoholPages">
+            <section className="ingredientPages">
                 {this.state.drinkByIngredient.map(elt => <CocktailTemp
                     key={uuidv4()}
                     cocktailName={elt.strDrink}
